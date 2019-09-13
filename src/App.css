@@ -52,3 +52,7 @@ ul {
 .text-center {
   text-align: center;
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}
