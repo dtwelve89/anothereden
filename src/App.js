@@ -1,11 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Another Eden</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
