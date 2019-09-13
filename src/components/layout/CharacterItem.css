@@ -1,0 +1,12 @@
+.item {
+  height: 250px;
+  width: 360px;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+.item img {
+  height: 100%;
+  width: 100%;
+}

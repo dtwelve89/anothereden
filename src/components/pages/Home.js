@@ -4,7 +4,8 @@ import squad from '../../data/squad';
 
 const Home = () => {
   return (
-    <div>
+    <div className='container'>
+      <h1 className='text-center'>My Character Squad</h1>
       <Gallery squad={squad} />
     </div>
   );

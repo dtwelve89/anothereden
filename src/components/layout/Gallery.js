@@ -1,9 +1,10 @@
 import React from 'react';
 import CharacterItem from './CharacterItem';
+import './Gallery.css';
 
 const Gallery = ({ squad }) => {
   return (
-    <div>
+    <div className='main-gallery-section'>
       {squad.map(character => (
         <CharacterItem key={squad.id} character={character} />
       ))}
