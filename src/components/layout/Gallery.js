@@ -6,7 +6,7 @@ const Gallery = ({ squad }) => {
   return (
     <div className='main-gallery-section'>
       {squad.map(character => (
-        <CharacterItem key={squad.id} character={character} />
+        <CharacterItem key={character.id} character={character} />
       ))}
     </div>
   );

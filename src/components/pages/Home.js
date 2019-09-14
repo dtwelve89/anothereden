@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className='container'>
       <Navbar />
-      <h1 className='text-center'>My Character Squad</h1>
+      <h1 className='text-center'>My Character Summons</h1>
       <Search filterCharacters={filterCharacters} resetFilter={resetFilter} />
       {filtered === null ? (
         <Gallery squad={squad} />
