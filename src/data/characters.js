@@ -1,17 +1,9 @@
-import Laclair from '../img/Laclair_5.png';
-import Shanie from '../img/Shanie_5.png';
-import Levia from '../img/Levia_5.png';
-import Aldo from '../img/Aldo_5.png';
-import Mariel from '../img/Mariel_5.png';
-import Lokido from '../img/Lokido_5.png';
-import Azami from '../img/Azami_5.png';
-import MightyAS from '../img/Mighty_AS.png';
-
-const squad = [
+const characters = [
   {
     id: 1,
     name: 'Laclair',
-    img: { Laclair },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/4/4e/101050061_rank5_base.png',
     rarity: 5,
     element: 'Water',
     attackType: 'Piercing',
@@ -21,9 +13,23 @@ const squad = [
     personalities: ['Bow']
   },
   {
+    id: 8,
+    name: 'Mighty',
+    img:
+      'https://static.miraheze.org/anotheredenwiki/a/a8/101000041_rank5_base.png',
+    rarity: 5,
+    element: 'Water',
+    attackType: 'Blunt',
+    weaponType: 'Staff',
+    accessoryType: 'Ring',
+    lightShadowType: 'Light',
+    personalities: ['IDA School', 'Staff']
+  },
+  {
     id: 2,
     name: 'Shanie',
-    img: { Shanie },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/3/3c/101010081_rank5_base.png',
     rarity: 5,
     element: 'Water',
     attackType: 'Slash',
@@ -35,7 +41,8 @@ const squad = [
   {
     id: 3,
     name: 'Levia',
-    img: { Levia },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/d/d1/101000201_rank5_base.png',
     rarity: 5,
     element: 'Water',
     attackType: 'Blunt',
@@ -47,7 +54,8 @@ const squad = [
   {
     id: 4,
     name: 'Aldo',
-    img: { Aldo },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/7/71/101910011_rank5_base.png',
     rarity: 5,
     element: 'Fire',
     attackType: 'Slash',
@@ -59,7 +67,8 @@ const squad = [
   {
     id: 5,
     name: 'Mariel',
-    img: { Mariel },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/c/c0/101000031_rank5_base.png',
     rarity: 5,
     element: 'None',
     attackType: 'Blunt',
@@ -71,7 +80,8 @@ const squad = [
   {
     id: 6,
     name: 'Lokido',
-    img: { Lokido },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/4/4f/101060031_rank5_base.png',
     rarity: 5,
     element: 'Earth',
     attackType: 'Blunt',
@@ -83,7 +93,8 @@ const squad = [
   {
     id: 7,
     name: 'Azami',
-    img: { Azami },
+    img:
+      'https://static.miraheze.org/anotheredenwiki/6/6d/101020011_rank5_base.png',
     rarity: 5,
     element: 'Wind',
     attackType: 'Slash',
@@ -91,19 +102,7 @@ const squad = [
     accessoryType: 'Ring',
     lightShadowType: 'Light',
     personalities: ['Eastern', 'Sweet Tooth', 'Katana']
-  },
-  {
-    id: 8,
-    name: 'Mighty AS',
-    img: { MightyAS },
-    rarity: 5,
-    element: 'Water',
-    attackType: 'Blunt',
-    weaponType: 'Staff',
-    accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['IDA School', 'Staff']
   }
 ];
 
-export default squad;
+export default characters;

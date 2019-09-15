@@ -2,10 +2,10 @@ import React from 'react';
 import CharacterItem from './CharacterItem';
 import './Gallery.css';
 
-const Gallery = ({ squad }) => {
+const Gallery = ({ characters }) => {
   return (
     <div className='main-gallery-section'>
-      {squad.map(character => (
+      {characters.map(character => (
         <CharacterItem key={character.id} character={character} />
       ))}
     </div>
