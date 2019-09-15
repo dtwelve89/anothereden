@@ -23,7 +23,10 @@ const Home = () => {
   return (
     <div className='container'>
       <Navbar />
-      <h1 className='text-center'>My Character Summons</h1>
+      <h1 className='text-center'>
+        My Character Summons (
+        {filtered === null ? characters.length : filtered.length})
+      </h1>
       <Search filterCharacters={filterCharacters} resetFilter={resetFilter} />
       {filtered === null ? (
         <Gallery characters={characters} />
