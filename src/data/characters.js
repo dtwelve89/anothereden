@@ -312,7 +312,7 @@ const characters = [
   },
   {
     id: 25,
-    name: 'Felmina',
+    name: 'Ewan',
     img:
       'https://static.miraheze.org/anotheredenwiki/f/f6/101070051_rank5_base.png',
     rarity: 5,
