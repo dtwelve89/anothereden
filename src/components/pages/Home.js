@@ -140,7 +140,13 @@ const Home = () => {
             </li>
           </ul>
         </div>
-        {filtered === null ? '' : <h1 onClick={resetFilter}>RESET</h1>}
+        {filtered === null ? (
+          ''
+        ) : (
+          <button type='button' className='btn' onClick={resetFilter}>
+            RESET
+          </button>
+        )}
       </div>
       <h1 className='text-center'>
         My Character Summons (

@@ -71,3 +71,12 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+.btn {
+  display: inline-block;
+  color: white;
+  background: gray;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+}
