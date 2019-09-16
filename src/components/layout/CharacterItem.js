@@ -2,12 +2,14 @@ import React from 'react';
 import './CharacterItem.css';
 
 const CharacterItem = ({ character }) => {
-  const details = () => {
+  const flipCard = () => {
+    // let itemInner = document.querySelector('.item-inner');
+    // itemInner.classList.add('flip-card');
     console.log(character);
   };
 
   return (
-    <figure className='item' onClick={details}>
+    <figure className='item' onClick={flipCard}>
       <div className='item-inner'>
         <div className='item-front'>
           <img src={character.img} alt='Character' />

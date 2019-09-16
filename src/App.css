@@ -56,3 +56,18 @@ ul {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.icons {
+  display: flex;
+}
+
+.icons li {
+  margin: 0.3rem;
+}
+
+.main-filter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

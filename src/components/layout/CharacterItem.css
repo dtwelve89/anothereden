@@ -24,7 +24,11 @@
 }
 
 /* Horizontal flip */
-.item:hover .item-inner {
+/* .item:hover .item-inner {
+  transform: rotateY(180deg);
+} */
+
+.flip-card {
   transform: rotateY(180deg);
 }
 
