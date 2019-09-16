@@ -20,8 +20,6 @@ const Home = () => {
     setFiltered(null);
   };
 
-  console.log('Test');
-
   return (
     <div className='container'>
       <Navbar />
