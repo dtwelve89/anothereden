@@ -21,7 +21,7 @@ const CharacterItem = ({ character }) => {
             <li>Attack Type: {character.attackType}</li>
             <li>Weapon Type: {character.weaponType}</li>
             <li>Accessory Type: {character.accessoryType}</li>
-            <li>Light/Shadow Type: {character.lightShadowType}</li>
+            <li>L/S Type: {character.lightShadowType}</li>
             {/* <li>Personalities: {character.personalities}</li> */}
           </ul>
         </div>

@@ -14,9 +14,9 @@ const characters = [
   },
   {
     id: 2,
-    name: 'Mighty',
+    name: 'Mighty (AS)',
     img:
-      'https://static.miraheze.org/anotheredenwiki/a/a8/101000041_rank5_base.png',
+      'https://static.miraheze.org/anotheredenwiki/7/75/101000041_s2_rank5_base.png',
     rarity: 5,
     element: 'Water',
     attackType: 'Blunt',
