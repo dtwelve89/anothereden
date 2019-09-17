@@ -1,4 +1,5 @@
 import React from 'react';
+import './TypeFilter.css';
 
 import Earth from '../../img/elements/Earth.png';
 import Fire from '../../img/elements/Fire.png';
@@ -52,6 +53,17 @@ const TypeFilters = ({
           </li>
         </ul>
       </div>
+      <div className='ls-types'>
+        <h3 className='text-center'>L/S</h3>
+        <ul className='icons'>
+          <li onClick={() => lsType('Light')}>
+            <img src={Light} alt='Light' />
+          </li>
+          <li onClick={() => lsType('Shadow')}>
+            <img src={Shadow} alt='Shadow' />
+          </li>
+        </ul>
+      </div>
       <div className='weapon-types'>
         <h3 className='text-center'>Weapons</h3>
         <ul className='icons'>
@@ -92,17 +104,6 @@ const TypeFilters = ({
           </li>
           <li onClick={() => accessoryType('Bangle')}>
             <img src={Bangle} alt='Bangle' />
-          </li>
-        </ul>
-      </div>
-      <div className='ls-types'>
-        <h3 className='text-center'>L/S</h3>
-        <ul className='icons'>
-          <li onClick={() => lsType('Light')}>
-            <img src={Light} alt='Light' />
-          </li>
-          <li onClick={() => lsType('Shadow')}>
-            <img src={Shadow} alt='Shadow' />
           </li>
         </ul>
       </div>
