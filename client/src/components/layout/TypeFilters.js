@@ -21,16 +21,17 @@ import Shadow from '../../img/type/Shadow.png';
 import CharacterContext from '../../context/character/characterContext';
 import './TypeFilter.css';
 
-const TypeFilters = ({
-  filtered,
-  filterType,
-  weaponType,
-  accessoryType,
-  lsType
-}) => {
+const TypeFilters = () => {
   const characterContext = useContext(CharacterContext);
 
-  const { clearFilter } = characterContext;
+  const {
+    filtered,
+    filterType,
+    weaponType,
+    accessoryType,
+    lsType,
+    clearFilter
+  } = characterContext;
   return (
     <div className='main-filter-section'>
       <div className='element-types'>
