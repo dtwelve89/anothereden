@@ -1,11 +1,21 @@
 const express = require('express');
 const router = express.Router();
+const auth = require('../middleware/auth');
+const { check, validationResult } = require('express-validator');
+
+const User = require('../models/User');
+const Character = require('../models/Character');
 
 // @route       GET /api/characters
 // @desc        Get all users characters
 // @access      Private
-router.get('/', (req, res) => {
-  res.send('Get all characters');
+router.get('/', auth, async (req, res) => {
+  try {
+    const characters = await Character.find({ user: req.user.id });
+    res.json(characters);
+  } catch (err) {
+    res.status(500).send('Server Error');
+  }
 });
 
 // @route       POST /api/characters

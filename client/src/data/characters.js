@@ -9,8 +9,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Cat lover', 'Clergy', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 2,
@@ -22,8 +21,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['IDA School', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 3,
@@ -35,8 +33,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Shadow',
-    personalities: ['Staff']
+    lightShadowType: 'Shadow'
   },
   {
     id: 4,
@@ -61,8 +58,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Eastern', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 6,
@@ -74,8 +70,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Dragon Palace', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 7,
@@ -87,8 +82,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Beast', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 8,
@@ -100,8 +94,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Staff',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['IDA School', 'Staff']
+    lightShadowType: 'Light'
   },
   {
     id: 9,
@@ -113,8 +106,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Sword',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Miglance Palace', 'Sweet Tooth', 'Sword']
+    lightShadowType: 'Light'
   },
   {
     id: 10,
@@ -126,8 +118,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Sword',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Miglance Palace', 'Sword']
+    lightShadowType: 'Light'
   },
   {
     id: 11,
@@ -139,8 +130,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Sword',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Sword']
+    lightShadowType: 'Light'
   },
   {
     id: 12,
@@ -152,8 +142,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Katana',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Eastern', 'Sweet Tooth', 'Katana']
+    lightShadowType: 'Light'
   },
   {
     id: 13,
@@ -165,8 +154,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Katana',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Eastern', 'Cat Lover', 'Katana']
+    lightShadowType: 'Light'
   },
   {
     id: 14,
@@ -178,8 +166,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Katana',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['IDA School', 'Katana']
+    lightShadowType: 'Light'
   },
   {
     id: 15,
@@ -191,8 +178,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Katana',
     accessoryType: 'Ring',
-    lightShadowType: 'Shadow',
-    personalities: ['Eastern', 'Katana']
+    lightShadowType: 'Shadow'
   },
   {
     id: 16,
@@ -204,8 +190,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Ax',
     accessoryType: 'Necklace',
-    lightShadowType: 'Shadow',
-    personalities: ['Dragon Palace', 'Ax']
+    lightShadowType: 'Shadow'
   },
   {
     id: 17,
@@ -217,8 +202,7 @@ const characters = [
     attackType: 'Piercing',
     weaponType: 'Lance',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Sweet Tooth', 'Lance']
+    lightShadowType: 'Light'
   },
   {
     id: 18,
@@ -243,8 +227,7 @@ const characters = [
     attackType: 'Piercing',
     weaponType: 'Lance',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Miglance Palace', 'Lance']
+    lightShadowType: 'Light'
   },
   {
     id: 20,
@@ -256,8 +239,7 @@ const characters = [
     attackType: 'Piercing',
     weaponType: 'Bow',
     accessoryType: 'Ring',
-    lightShadowType: 'Light',
-    personalities: ['Bow']
+    lightShadowType: 'Light'
   },
   // {
   //   id: 21,
@@ -268,8 +250,7 @@ const characters = [
   //   attackType: 'Piercing',
   //   weaponType: 'Bow',
   //   accessoryType: 'Ring',
-  //   lightShadowType: 'Light',
-  //   personalities: ['IDA School', 'Bow']
+  //   lightShadowType: 'Light'
   // },
   {
     id: 22,
@@ -281,8 +262,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Fists',
     accessoryType: 'Necklace',
-    lightShadowType: 'Light',
-    personalities: ['Fists']
+    lightShadowType: 'Light'
   },
   {
     id: 23,
@@ -294,8 +274,7 @@ const characters = [
     attackType: 'Piercing',
     weaponType: 'Fists',
     accessoryType: 'Necklace',
-    lightShadowType: 'Light',
-    personalities: ['Glasses', 'IDA School', 'Fists']
+    lightShadowType: 'Light'
   },
   {
     id: 24,
@@ -307,8 +286,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Fists',
     accessoryType: 'Necklace',
-    lightShadowType: 'Shadow',
-    personalities: ['Miglance Palace', 'Fists']
+    lightShadowType: 'Shadow'
   },
   {
     id: 25,
@@ -320,8 +298,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Hammer',
     accessoryType: 'Bangle',
-    lightShadowType: 'Shadow',
-    personalities: ['Glasses', 'Sweeth Tooth', 'Miner', 'Hammer']
+    lightShadowType: 'Shadow'
   },
   {
     id: 26,
@@ -333,8 +310,7 @@ const characters = [
     attackType: 'Blunt',
     weaponType: 'Hammer',
     accessoryType: 'Bangle',
-    lightShadowType: 'Shadow',
-    personalities: ['Sweeth Tooth', 'Clergy', 'Miner', 'Hammer']
+    lightShadowType: 'Shadow'
   },
   {
     id: 27,
@@ -346,8 +322,7 @@ const characters = [
     attackType: 'Slash',
     weaponType: 'Sword',
     accessoryType: 'Bangle',
-    lightShadowType: 'Light',
-    personalities: ['Protagonist', 'Guiding Light', 'Forager', 'Sword']
+    lightShadowType: 'Light'
   }
 ];
 

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import Navbar from '../layout/Navbar';
-import TypeFilters from '../layout/TypeFilters';
-import Search from '../layout/Search';
-import Gallery from '../layout/Gallery';
+import Navbar from '../layout/Navbar/Navbar';
+import TypeFilters from '../layout/TypeFilters/TypeFilters';
+import Search from '../layout/Search/Search';
+import Gallery from '../layout/Gallery/Gallery';
 import CharacterContext from '../../context/character/characterContext';
 
 const Home = () => {

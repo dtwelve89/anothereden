@@ -1,25 +1,25 @@
 import React, { useContext } from 'react';
-import Earth from '../../img/elements/Earth.png';
-import Fire from '../../img/elements/Fire.png';
-import None from '../../img/elements/None.png';
-import Water from '../../img/elements/Water.png';
-import Wind from '../../img/elements/Wind.png';
-import Staff from '../../img/weapons/Staff.png';
-import Sword from '../../img/weapons/Sword.png';
-import Katana from '../../img/weapons/Katana.png';
-import Ax from '../../img/weapons/Ax.png';
-import Lance from '../../img/weapons/Lance.png';
-import Bow from '../../img/weapons/Bow.png';
-import Fists from '../../img/weapons/Fists.png';
-import Hammer from '../../img/weapons/Hammer.png';
-import Ring from '../../img/accessory/Ring.png';
-import Necklace from '../../img/accessory/Necklace.png';
-import Bangle from '../../img/accessory/Bangle.png';
-import Light from '../../img/type/Light.png';
-import Shadow from '../../img/type/Shadow.png';
+import Earth from '../../assets/images/elements/Earth.png';
+import Fire from '../../assets/images/elements/Fire.png';
+import None from '../../assets/images/elements/None.png';
+import Water from '../../assets/images/elements/Water.png';
+import Wind from '../../assets/images/elements/Wind.png';
+import Staff from '../../assets/images/weapons/Staff.png';
+import Sword from '../../assets/images/weapons/Sword.png';
+import Katana from '../../assets/images/weapons/Katana.png';
+import Ax from '../../assets/images/weapons/Ax.png';
+import Lance from '../../assets/images/weapons/Lance.png';
+import Bow from '../../assets/images/weapons/Bow.png';
+import Fists from '../../assets/images/weapons/Fists.png';
+import Hammer from '../../assets/images/weapons/Hammer.png';
+import Ring from '../../assets/images/accessory/Ring.png';
+import Necklace from '../../assets/images/accessory/Necklace.png';
+import Bangle from '../../assets/images/accessory/Bangle.png';
+import Light from '../../assets/images/type/Light.png';
+import Shadow from '../../assets/images/type/Shadow.png';
 
-import CharacterContext from '../../context/character/characterContext';
-import './TypeFilter.css';
+import CharacterContext from '../../../context/character/characterContext';
+import './TypeFilters.css';
 
 const TypeFilters = () => {
   const characterContext = useContext(CharacterContext);

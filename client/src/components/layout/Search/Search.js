@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useEffect } from 'react';
-import CharacterContext from '../../context/character/characterContext';
+import CharacterContext from '../../../context/character/characterContext';
 import './Search.css';
 
 const Search = () => {

@@ -26,23 +26,23 @@ const CharacterState = props => {
   };
 
   // Filter Type
-  const filterType = type => {
-    dispatch({ type: TYPE_FILTER, payload: type });
+  const filterType = value => {
+    dispatch({ type: TYPE_FILTER, payload: value });
   };
 
   // Filter Weapon
-  const weaponType = type => {
-    dispatch({ type: WEAPON_FILTER, payload: type });
+  const weaponType = value => {
+    dispatch({ type: WEAPON_FILTER, payload: value });
   };
 
   // Filter Accessory
-  const accessoryType = type => {
-    dispatch({ type: ACCESSORY_FILTER, payload: type });
+  const accessoryType = value => {
+    dispatch({ type: ACCESSORY_FILTER, payload: value });
   };
 
   // Filter LS
-  const lsType = type => {
-    dispatch({ type: LS_FILTER, payload: type });
+  const lsType = value => {
+    dispatch({ type: LS_FILTER, payload: value });
   };
 
   // Clear Filter
