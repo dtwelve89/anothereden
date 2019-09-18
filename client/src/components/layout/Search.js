@@ -1,7 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
+import CharacterContext from '../../context/character/characterContext';
 import './Search.css';
 
-const Search = ({ filtered, filterCharacters, resetFilter }) => {
+const Search = () => {
+  const characterContext = useContext(CharacterContext);
+
+  const { filtered, filterCharacters, clearFilter } = characterContext;
+
   const text = useRef('');
 
   useEffect(() => {
@@ -14,7 +19,7 @@ const Search = ({ filtered, filterCharacters, resetFilter }) => {
     if (text.current.value !== '') {
       filterCharacters(e.target.value);
     } else {
-      resetFilter();
+      clearFilter();
     }
   };
 

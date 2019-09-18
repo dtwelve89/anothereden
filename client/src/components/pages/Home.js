@@ -1,45 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Navbar from '../layout/Navbar';
 import TypeFilters from '../layout/TypeFilters';
 import Search from '../layout/Search';
 import Gallery from '../layout/Gallery';
-import characters from '../../data/characters';
+import CharacterContext from '../../context/character/characterContext';
 
 const Home = () => {
-  const [filtered, setFiltered] = useState(null);
+  const characterContext = useContext(CharacterContext);
 
-  const filterCharacters = text => {
-    const regex = new RegExp(text, 'gi');
-    setFiltered(
-      characters.filter(character => {
-        return character.name.match(regex);
-      })
-    );
-  };
+  const { characters, filtered } = characterContext;
 
-  const filterType = type => {
-    setFiltered(characters.filter(character => character.element === type));
-  };
+  // const [filtered, setFiltered] = useState(null);
 
-  const weaponType = type => {
-    setFiltered(characters.filter(character => character.weaponType === type));
-  };
+  // const filterType = type => {
+  //   setFiltered(characters.filter(character => character.element === type));
+  // };
 
-  const accessoryType = type => {
-    setFiltered(
-      characters.filter(character => character.accessoryType === type)
-    );
-  };
+  // const weaponType = type => {
+  //   setFiltered(characters.filter(character => character.weaponType === type));
+  // };
 
-  const lsType = type => {
-    setFiltered(
-      characters.filter(character => character.lightShadowType === type)
-    );
-  };
+  // const accessoryType = type => {
+  //   setFiltered(
+  //     characters.filter(character => character.accessoryType === type)
+  //   );
+  // };
 
-  const resetFilter = () => {
-    setFiltered(null);
-  };
+  // const lsType = type => {
+  //   setFiltered(
+  //     characters.filter(character => character.lightShadowType === type)
+  //   );
+  // };
 
   return (
     <div className='container'>
@@ -51,13 +42,12 @@ const Home = () => {
       <br />
       <TypeFilters
         filtered={filtered}
-        filterType={filterType}
-        weaponType={weaponType}
-        accessoryType={accessoryType}
-        lsType={lsType}
-        resetFilter={resetFilter}
+        // filterType={filterType}
+        // weaponType={weaponType}
+        // accessoryType={accessoryType}
+        // lsType={lsType}
       />
-      <Search filterCharacters={filterCharacters} resetFilter={resetFilter} />
+      <Search />
       {filtered === null ? (
         <Gallery characters={characters} />
       ) : (

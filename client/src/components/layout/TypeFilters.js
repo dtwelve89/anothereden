@@ -1,12 +1,9 @@
-import React from 'react';
-import './TypeFilter.css';
-
+import React, { useContext } from 'react';
 import Earth from '../../img/elements/Earth.png';
 import Fire from '../../img/elements/Fire.png';
 import None from '../../img/elements/None.png';
 import Water from '../../img/elements/Water.png';
 import Wind from '../../img/elements/Wind.png';
-
 import Staff from '../../img/weapons/Staff.png';
 import Sword from '../../img/weapons/Sword.png';
 import Katana from '../../img/weapons/Katana.png';
@@ -15,22 +12,25 @@ import Lance from '../../img/weapons/Lance.png';
 import Bow from '../../img/weapons/Bow.png';
 import Fists from '../../img/weapons/Fists.png';
 import Hammer from '../../img/weapons/Hammer.png';
-
 import Ring from '../../img/accessory/Ring.png';
 import Necklace from '../../img/accessory/Necklace.png';
 import Bangle from '../../img/accessory/Bangle.png';
-
 import Light from '../../img/type/Light.png';
 import Shadow from '../../img/type/Shadow.png';
+
+import CharacterContext from '../../context/character/characterContext';
+import './TypeFilter.css';
 
 const TypeFilters = ({
   filtered,
   filterType,
   weaponType,
   accessoryType,
-  lsType,
-  resetFilter
+  lsType
 }) => {
+  const characterContext = useContext(CharacterContext);
+
+  const { clearFilter } = characterContext;
   return (
     <div className='main-filter-section'>
       <div className='element-types'>
@@ -110,7 +110,7 @@ const TypeFilters = ({
       {filtered === null ? (
         ''
       ) : (
-        <button type='button' className='btn' onClick={resetFilter}>
+        <button type='button' className='btn' onClick={clearFilter}>
           RESET
         </button>
       )}

@@ -2,12 +2,13 @@ import React, { useReducer } from 'react';
 
 import CharacterContext from './characterContext';
 import characterReducer from './characterReducer';
-import { GET_CHARACTERS, FILTER_CHARACTERS, CLEAR_FILTER } from '../types';
+import { FILTER_CHARACTERS, CLEAR_FILTER } from '../types';
 import characters from '../../data/characters';
 
 const CharacterState = props => {
   const initialState = {
-    characters
+    characters,
+    filtered: null
   };
 
   const [state, dispatch] = useReducer(characterReducer, initialState);
@@ -15,13 +16,22 @@ const CharacterState = props => {
   // Get Characters
 
   // Filter Characters
+  const filterCharacters = text => {
+    dispatch({ type: FILTER_CHARACTERS, payload: text });
+  };
 
   // Clear Filter
+  const clearFilter = () => {
+    dispatch({ type: CLEAR_FILTER });
+  };
 
   return (
     <CharacterContext.Provider
       value={{
-        characters: state.characters
+        characters: state.characters,
+        filtered: state.filtered,
+        filterCharacters,
+        clearFilter
       }}
     >
       {props.children}
